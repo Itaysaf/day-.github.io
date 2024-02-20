@@ -113,6 +113,16 @@
             background-color: #440363;
             border: 1px solid white;
         }
+
+
+        .nav-link img {
+        width: 1em; 
+        height: 1em; 
+        vertical-align: middle;
+        margin-left: 2px;
+        margin-bottom: 1px; 
+        filter: invert(100%); /
+        }
         @media (max-width: 576px) {
     .col-md-3.text-end {
         text-align: right;
@@ -139,6 +149,24 @@
         margin-bottom: 10px;
     }
 }
+.logo {
+        width: 120px; 
+        height: auto; 
+        border-radius: 10%;
+        margin-left: 5px;
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 70px; 
+        height: 40px;
+        }
+    }
 
 
 
@@ -148,15 +176,17 @@
 <body>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div class="col-md-3 mb-2 mb-md-0">
-          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-            <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-          </a>
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="./images/logotest2.jpg" alt="logo owl" class="logo">
+                    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+            
         </div>
   
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2">פאנל מארגנים</a></li>
           <li><a href="#" class="nav-link px-2">הכרטיסים שלי</a></li>
-          <li><a href="#" class="nav-link px-2">שפה ומיקום</a></li>
+          <li><a href="#" class="nav-link px-2">שפה ומיקום <img src="./images/globe.svg"  alt="globe"></a></li>
           
           <li>
               <form class="d-flex">
@@ -168,9 +198,10 @@
   
         <div class="col-md-3 text-end">
           <button type="button" class="btn btn-outline-primary">צור אירוע</button>
-          <button type="button" class="btn btn-outline-primary me-2">התחבר/הרשמה</button>
+          <button type="button" class="btn btn-outline-primary me-2">התחבר   </button>
         </div>
     </header>
+
     <div class="carousel-container">
         <h1 class="eventsheader">Trending Events</h1>
         <div class="owl-carousel owl-theme" id="carousel1">
@@ -199,6 +230,7 @@
 
     <div class="album py-5 bg-body-tertiary">
         <div class="container">
+            <h1 class="eventsheader" style="margin-bottom: 20px;">שטחים להשכרה</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 
                 <div class="col">
