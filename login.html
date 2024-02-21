@@ -174,12 +174,35 @@
 }
 
 
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+footer {
+    background-color: #440363;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div class="col-md-3 mb-2 mb-md-0">
-            <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <a href="Homepagel.html" class="d-inline-flex link-body-emphasis text-decoration-none">
                 <img src="./images/logotest2.jpg" alt="logo owl" class="logo">
                 <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
             </a>
@@ -204,7 +227,7 @@
         </div>
     </header>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-5"> 
         <div class="col-md-4"> 
             <div class="card">
                 <div class="card-header" style="background-color: #440363; color: white; font-weight: bold;" dir="rtl">התחבר</div>
@@ -232,8 +255,9 @@
     
     
     
+    
 
-    <footer class="py-5">
+    <footer class="py-5 mt-auto">
         <div class="container footer-content">
             <div class="footer-section">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
