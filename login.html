@@ -135,14 +135,14 @@
 }
 @media (max-width: 576px) {
     .footer-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
 
     .footer-section {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .footer-section h5 {
@@ -192,6 +192,41 @@ footer {
 }
 
 
+@media (max-width: 576px) {
+    .col-md-3.text-end {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .nav {
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .nav-link img {
+        margin-left: 0;
+        margin-right: 2px;
+    }
+
+    .form-control {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
 
 
 
@@ -224,13 +259,19 @@ footer {
     
         <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary">צור אירוע</button>
-            <a href="login.html" class="btn btn-outline-primary me-2">התחבר   </a>
+            <a href="login.html" class="btn btn-outline-primary me-2">התחבר</a>
         </div>
     </header>
     
 
-    <div class="row justify-content-center mb-5"> 
+    <div class="row justify-content-center mb-3"> 
         <div class="col-md-4"> 
+            <div class="text-center mb-3">
+                <a href="registration.html" class="btn btn-primary" style="background-color: #440363; border-color: #440363; font-weight: bold;">
+                    אין לך משתמש עדיין? <span style="color: rgb(255, 72, 0);">הרשמו עכשיו</span>
+                </a>
+                
+            </div>
             <div class="card">
                 <div class="card-header" style="background-color: #440363; color: white; font-weight: bold;" dir="rtl">התחבר</div>
                 <div class="card-body" dir="rtl"> 
@@ -254,12 +295,7 @@ footer {
         </div>
     </div>
     
-    
-    
-    
-    
-
-    <footer class="py-5 mt-auto">
+    <footer class="py-3 mt-auto">
         <div class="container footer-content">
             <div class="footer-section">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
@@ -286,14 +322,6 @@ footer {
                 </ul>
             </div>
     
-            <div class="footer-section" >
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
-                    
-                </ul>
-            </div>
         </div>
     </footer>
 </body>
