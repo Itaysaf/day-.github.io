@@ -38,10 +38,10 @@
         }
 
         header {
-            background-color: #440363 ;
+            background: linear-gradient(to right, #00008B, #440363, #440363);
         }
         footer {
-    background-color: #440363;
+            background: linear-gradient(to right, #00008B, #440363, #440363);
     color: white;
     max-width: 100%; 
 }
@@ -238,9 +238,9 @@
     </style>
 </head>
 <body>
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom sticky-top">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div class="col-md-3 mb-2 mb-md-0">
-            <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <a href="Homepagel.html" class="d-inline-flex link-body-emphasis text-decoration-none">
                 <img src="./images/logotest2.jpg" alt="logo owl" class="logo">
                 <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
             </a>
@@ -260,7 +260,7 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary">צור אירוע</button>
+            <a href="create.html" class="btn btn-outline-primary me-2">צור אירוע</a>
             <a href="login.html" class="btn btn-outline-primary me-2">התחבר   </a>
         </div>
     </header>
@@ -269,7 +269,7 @@
     <div class="row justify-content-center mb-5">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header">צור אירוע חדש</div>
+                <div class="card-header" style="direction: rtl; background: linear-gradient(to right, #00008B, #440363);">צור אירוע חדש</div>
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
@@ -301,17 +301,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="language" class="form-label">שפה</label>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    בחר שפה
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a class="dropdown-item" href="#">עברית</a></li>
-                                    <li><a class="dropdown-item" href="#">English</a></li>
-                                    <li><a class="dropdown-item" href="#">Español</a></li>
-                                    <!-- Add more language options as needed -->
-                                </ul>
-                            </div>
+                            <select class="form-select" id="language">
+                                <option selected>בחר שפה</option>
+                                <option value="1">עברית</option>
+                                <option value="2">English</option>
+                            </select>
                         </div>
                         <div class="mb-3">
                             <label for="currency" class="form-label">מטבע</label>
@@ -321,7 +315,7 @@
                             <label for="eventDescription" class="form-label">תיאור האירוע</label>
                             <textarea class="form-control" id="eventDescription" rows="3" placeholder="הזן תיאור לאירוע"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-primary-custom">צור אירוע</button>
+                        <button type="submit" class="btn btn-primary btn-primary-custom" style="background: linear-gradient(to right, #00008B, #440363);">צור אירוע</button>
                     </form>
                 </div>
             </div>
