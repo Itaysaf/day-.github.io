@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
     <link rel="icon" href="./images/logo353.png">
     <style>
+        
         .rounded-image {
             border-radius: 5%;
             position: relative;
@@ -181,8 +182,9 @@
         top: 0;
         right: 0;
         margin-top: 10px;
-        margin-right: 10px;
+        margin-right:10px ;
     }
+    
 
     .nav {
         flex-direction: row-reverse;
@@ -237,6 +239,27 @@
         .form-label {
             font-weight: bold;
         }
+
+
+        .stage-indicator {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .stage-indicator span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+
+        .stage-indicator span.active {
+            background-color: #440363;
+        }
+        
     </style>
 </head>
 <body>
@@ -247,7 +270,7 @@
                 <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
             </a>
         </div>
-
+        
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-2" style="color: rgb(252, 252, 252);">פאנל מארגנים</a></li>
             <li><a href="#" class="nav-link px-2" style="color: rgb(252, 252, 252);">הכרטיסים שלי</a></li>
@@ -272,6 +295,13 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header" style="direction: rtl; background: linear-gradient(to right, #684a83,  #440363);">צור אירוע חדש</div>
+                <div class="stage-indicator">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="card-body">
                     <form>
                         <div class="mb-3">
@@ -317,7 +347,7 @@
                             <label for="eventDescription" class="form-label">תיאור האירוע</label>
                             <textarea class="form-control" id="eventDescription" rows="3" placeholder="הזן תיאור לאירוע"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-primary-custom" style="background: linear-gradient(to right, #684a83,  #440363);">צור אירוע</button>
+                        <a href="create-2.html"><button type="submit" class="btn btn-primary btn-primary-custom" style="background: linear-gradient(to right, #684a83,  #440363);">המשך</button></a>
                     </form>
                 </div>
             </div>
