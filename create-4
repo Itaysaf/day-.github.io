@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <link rel="icon" href="./images/logo353.png">
+    <style>
+        
+        .rounded-image {
+            border-radius: 5%;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px;
+            color: white;
+            text-align: center;
+            backdrop-filter: blur(5px); 
+        }
+
+        .eventsheader {
+            width: 100%;
+            font-size: larger;
+            font-family: Ubuntu, sans-serif;
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 20px; 
+        }
+
+        header {
+            background: linear-gradient(to right, #684a83,  #440363);
+        }
+        footer {
+            background: linear-gradient(to right, #684a83,  #440363);
+    color: white;
+    max-width: 100%; 
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section h5 {
+    color: white;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+        .nav-link {
+            color: rgb(252, 252, 252);
+        }
+
+        
+        .btn-outline-primary {
+            color: white;
+            border-color: white; 
+        }
+
+        
+        .btn-outline-primary:hover {
+            background-color: white;
+            color: black;  
+        }
+
+        
+        .album {
+            margin-top: 50px;
+        }
+        .row-cols-1 .col {
+    padding: 0 30px 30px; 
+}
+
+
+.btn-custom {
+            background-color: #440363;
+            color: white;
+            border: 1px solid black;
+        }
+
+        .btn-custom:hover {
+            background-color: #440363;
+            border: 1px solid white;
+        }
+
+
+        .nav-link img {
+        width: 1em; 
+        height: 1em; 
+        vertical-align: middle;
+        margin-left: 2px;
+        margin-bottom: 1px; 
+        filter: invert(100%); /
+        }
+        @media (max-width: 576px) {
+    .col-md-3.text-end {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 5px;
+        
+    }
+
+    .footer-section h5 {
+        margin-bottom: 10px;
+    }
+}
+.logo {
+        width: 150px; 
+        height: auto; 
+        border-radius: 10%;
+        margin-left: 5px;
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 2px;
+            margin-left: 2px ;
+            width: 70px; 
+        height: 80;
+        }
+    
+    }
+
+
+
+
+    @media (max-width: 576px) {
+    .col-md-3.text-end {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right:10px ;
+    }
+    
+
+    .nav {
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .nav-link img {
+        margin-left: 0;
+        margin-right: 2px;
+    }
+
+    .form-control {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .btn {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+
+        
+
+        .card-header {
+            background-color: #440363;
+            color: white;
+            font-weight: bold;
+        }
+
+        .card-body {
+            direction: rtl;
+        }
+
+        .btn-primary-custom {
+            background-color: #440363;
+            border-color: #440363;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+
+        .stage-indicator {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .stage-indicator span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 10px;
+        }
+
+        .stage-indicator span.active {
+            background-color: #440363;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <div class="col-md-3 mb-2 mb-md-0">
+            <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <img src="./images/logo353.png" alt="logo owl" class="logo">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        </div>
+        
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2" style="color: rgb(252, 252, 252);">פאנל מארגנים</a></li>
+            <li><a href="#" class="nav-link px-2" style="color: rgb(252, 252, 252);">הכרטיסים שלי</a></li>
+            <li><a href="#" class="nav-link px-2" style="color: rgb(252, 252, 252);">שפה ומיקום <img src="./images/globe.svg" alt="globe"></a></li>
+
+            <li>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+            <a href="create.html" class="btn btn-outline-primary me-2">צור אירוע</a>
+            <a href="login.html" class="btn btn-outline-primary me-2">התחבר   </a>
+        </div>
+    </header>
+
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header" style="direction: rtl; background: linear-gradient(to right, #684a83,  #440363);">צור אירוע חדש</div>
+                <div class="stage-indicator">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="timezone" class="form-label">פרטיות</label>
+                            <select class="form-select" id="timezone">
+                            
+                                <option value="1">פרטי</option>
+                                <option value="2">פומבי</option>
+                                
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="minAge" class="form-label">בחר גיל מינימלי</label>
+                            <select class="form-select" id="minAge">
+                                <option selected disabled>בחר גיל מינימלי</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="creator" class="form-label">שם מארגן האירוע</label>
+                            <input type="text" class="form-control" id="creator" placeholder="שם מקים האירוע">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">דוא"ל לשירות לקוחות</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="הזן את כתובת האימייל" required>
+                        </div>
+                        
+                        <a href="create-5.html"><button type="submit" class="btn btn-primary btn-primary-custom" style="background: linear-gradient(to right, #684a83,  #440363);">המשך</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="py-3 mt-auto">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+            </div>
+
+            <div class="footer-section">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-ZIpFLZi6RlTvgvEr5/xXK3+LdNRiG72YSoPKxxHJLYqPm/0UX3z0u/ovp+fo0Sj+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-DW/cfOeGRJS9nGYz5KG9NmzoHofSPma2GcehjFL+cbVlvxZ8hivwwkavfuVJDwS8" crossorigin="anonymous"></script>
+<script>
+    var minAgeSelect = document.getElementById('minAge');
+
+
+for (var i = 1; i <= 80; i++) {
+    var option = document.createElement('option');
+    option.value = i;
+    option.text = i;
+    minAgeSelect.appendChild(option);
+}
+</script>
+</body>
+</html>
